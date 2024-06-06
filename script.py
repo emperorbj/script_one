@@ -5,5 +5,5 @@ link = argv[1]
 ytube = YouTube(link)
 
 print("title: ",ytube.title)
-tube_download = ytube.streams.get_highest_resolution()
-tube_download.download('C://Users//USER//Videos')
+tube_download = ytube.streams.get_lowest_resolution()
+tube_download.download('C:/Users/USER/Videos')
